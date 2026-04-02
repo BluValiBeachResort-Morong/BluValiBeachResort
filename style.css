@@ -423,97 +423,65 @@ nav a.active,
 /* =========================
    📱 MOBILE ONLY
 ========================= */
-@media (max-width: 768px) {
+/* 📱 iPhone Style Bottom Nav */
+.mobile-nav {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 92%;
+  max-width: 500px;
 
-  /* TOP BAR */
-  .top-bar .container {
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-  .top-bar {
-    padding: 8px 5px;
-  }
+  padding: 10px 6px;
 
-  .top-bar span {
-    font-size: 13px;
-  }
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 
-  /* HERO */
-  .overlay h1 {
-    display: none;
-  }
+  border-radius: 25px;
 
-  .overlay p {
-    margin-top: 5px;
-  }
+  box-shadow: 
+    0 8px 25px rgba(0,0,0,0.15),
+    inset 0 1px rgba(255,255,255,0.6);
 
-  /* HEADER */
-  header nav {
-    display: none;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .nav {
-    justify-content: center;
-    align-items: center;
-    padding: 12px 0;
-  }
-
-  header .btn {
-    display: block;
-    margin: 0 auto;
-    padding: 12px 25px;
-    border-radius: 50px;
-    font-size: 14px;
-    background: #0b3d2e;
-    color: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  }
-
-  header {
-    padding-bottom: 0;
-  }
-
-  /* MOBILE NAV */
-  .mobile-nav {
-    display: flex;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-    border-radius: 50px;
-    padding: 12px 25px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    gap: 25px;
-    z-index: 9999;
-  }
-
-  .mobile-nav a {
-    text-decoration: none;
-    color: #0b3d2e;
-    font-weight: 600;
-    font-size: 13px;
-  }
-
-  /* spacing para di matakpan */
-  body {
-    padding-bottom: 110px;
-  }
+  z-index: 999;
 }
 
-/* =========================
-   💻 DESKTOP ONLY
-========================= */
+/* 🔥 Nav Links */
+.mobile-nav a {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+  color: #0b3d2e;
+  text-decoration: none;
+
+  padding: 8px 0;
+  border-radius: 15px;
+
+  transition: all 0.25s ease;
+}
+
+/* 🔥 Active (iOS style highlight) */
+.mobile-nav a.active {
+  background: #0b3d2e;
+  color: white;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* 🔥 Tap Effect */
+.mobile-nav a:active {
+  transform: scale(0.9);
+}
+
+/* 🚫 Desktop hidden */
 @media (min-width: 769px) {
   .mobile-nav {
-    display: none !important;
+    display: none;
   }
 }
-
-
