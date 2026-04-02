@@ -243,7 +243,9 @@ nav a.active,
     gap: 5px;
   }
 }
-
+.top-bar {
+  display: none !important;
+}
 
 .contact-section {
   padding-bottom: 120px; /* from 80 → 60 para umangat */
