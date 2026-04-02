@@ -199,3 +199,7 @@ nav a {
   background: #0b3d2e;
   color: white;
 }
+
+.social-links i {
+  margin-right: 8px;
+}
