@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BluVali Beach Resort</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <span>📍 Sitio Mankahilo, Consuelo, San Francisco, Philippines</span>
+      <span>📞 +63 912 345 6789</span>
+      <span>✉️ bluvalibeach@gmail.com</span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="container nav">
+      <h2 class="logo">BluVali Beach Resort</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Villas</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a href="#" class="btn">BOOK YOUR STAY</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>BluVali Beach Resort</h1>
+      <p>Luxury Without Limits</p>
+    </div>
+  </section>
+
+</body>
+</html>
