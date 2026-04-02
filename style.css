@@ -187,3 +187,50 @@ nav a:hover {
   font-size: 40px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+
+  /* TOP BAR */
+  .top-bar .container {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  /* NAVBAR */
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px 10px;
+  }
+
+  /* HERO TEXT */
+  .overlay h1 {
+    font-size: 32px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+
+  /* BUTTON */
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  /* GALLERY */
+  .gallery img {
+    height: 200px;
+  }
+
+}
