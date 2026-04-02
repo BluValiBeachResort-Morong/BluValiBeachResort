@@ -242,7 +242,6 @@ function filterSelection(category) {
     }
   }
 
-  // active button highlight
   let btns = document.querySelectorAll(".filter-buttons button");
   btns.forEach(btn => btn.classList.remove("active"));
 
@@ -251,10 +250,8 @@ function filterSelection(category) {
   }
 }
 
-// ✅ DEFAULT = GUEST
 window.addEventListener("DOMContentLoaded", () => {
-
-  filterSelection("amenities"); // 🔥 ito pinaka important
+  filterSelection("amenities");
 
   let lastScroll = 0;
   const header = document.querySelector("header");
@@ -270,19 +267,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
     lastScroll = currentScroll;
   });
-
 });
 
- const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".mobile-nav a, nav a");
-  
 
 window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach(section => {
-   const sectionTop = section.offsetTop - 150;
-    const sectionHeight = section.clientHeight;
+    const sectionTop = section.offsetTop - 150;
 
     if (scrollY >= sectionTop) {
       current = section.getAttribute("id");
@@ -296,6 +290,7 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+</script>
 
   
 </script>
