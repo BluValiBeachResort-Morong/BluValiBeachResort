@@ -241,21 +241,23 @@ function filterSelection(category) {
   event.target.classList.add("active");
 }
 
+  window.addEventListener("DOMContentLoaded", () => {
+
   let lastScroll = 0;
-const header = document.querySelector("header");
+  const header = document.querySelector("header");
 
-window.addEventListener("scroll", () => {
-  let currentScroll = window.pageYOffset;
+  window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
 
-  if (currentScroll > lastScroll) {
-    // scroll down → hide
-    header.style.transform = "translateY(-100%)";
-  } else {
-    // scroll up → show
-    header.style.transform = "translateY(0)";
-  }
+    if (currentScroll > lastScroll) {
+      header.style.transform = "translateY(-100%)";
+    } else {
+      header.style.transform = "translateY(0)";
+    }
 
-  lastScroll = currentScroll;
+    lastScroll = currentScroll;
+  });
+
 });
   
 </script>
