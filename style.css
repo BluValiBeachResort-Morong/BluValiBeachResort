@@ -63,25 +63,30 @@ header {
   width: 100%;
 }
 
-nav a {
+nav a,
+.mobile-nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #0b3d2e;
   font-weight: bold;
-}
 
-nav a,
-.mobile-nav a {
+  padding: 6px 12px; /* 🔥 constant */
+  border-radius: 20px;
   transition: all 0.3s ease;
 }
 
-/* 🔥 HOVER EFFECT */
+/* hover */
 nav a:hover,
 .mobile-nav a:hover {
   background: #0b3d2e;
   color: white;
-  padding: 6px 12px;
-  border-radius: 20px;
+}
+
+/* active */
+nav a.active,
+.mobile-nav a.active {
+  background: #0b3d2e;
+  color: white;
 }
 
 .btn {
