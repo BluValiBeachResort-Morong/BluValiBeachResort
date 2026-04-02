@@ -33,7 +33,6 @@
 
 <!-- HERO VIDEO -->
 <section class="hero">
-
   <video autoplay muted loop playsinline class="hero-video">
     <source src="images/bluvalivideo.mp4" type="video/mp4">
   </video>
@@ -43,7 +42,6 @@
     <p>Luxury Without Limits</p>
     <a href="#" class="btn">BOOK YOUR STAY</a>
   </div>
-
 </section>
 
 <!-- GALLERY -->
@@ -63,14 +61,38 @@
     <img src="images/amenities/Amenities1.jpeg" class="gallery-item amenities">
     <img src="images/amenities/Amenities2.jpeg" class="gallery-item amenities">
     <img src="images/amenities/Amenities3.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities4.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities5.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities6.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities7.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities8.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities9.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities10.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities11.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities12.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities13.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities14.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities15.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities16.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities17.jpeg" class="gallery-item amenities">
 
     <!-- LOUNGE -->
+    <img src="images/lounge/BluvaliLounge.jpeg" class="gallery-item lounge">
     <img src="images/lounge/BluvaliLounge1.jpeg" class="gallery-item lounge">
     <img src="images/lounge/BluvaliLounge2.jpeg" class="gallery-item lounge">
+    <img src="images/lounge/BluvaliLounge3.jpeg" class="gallery-item lounge">
+    <img src="images/lounge/BluvaliLounge4.jpeg" class="gallery-item lounge">
 
     <!-- ROOMS -->
+    <img src="images/rooms/Room.jpeg" class="gallery-item rooms">
     <img src="images/rooms/Room1.jpeg" class="gallery-item rooms">
     <img src="images/rooms/Room2.jpeg" class="gallery-item rooms">
+    <img src="images/rooms/Room3.jpeg" class="gallery-item rooms">
+    <img src="images/rooms/Room4.jpeg" class="gallery-item rooms">
+    <img src="images/rooms/Room5.jpeg" class="gallery-item rooms">
+    <img src="images/rooms/Room6.jpeg" class="gallery-item rooms">
+    <img src="images/rooms/Room7.jpeg" class="gallery-item rooms">
+    <img src="images/rooms/Room8.jpeg" class="gallery-item rooms">
 
   </div>
 </section>
@@ -81,8 +103,8 @@
   <img id="lightbox-img">
 </div>
 
-<!-- SCRIPT -->
 <script>
+// FILTER
 function filterSelection(category) {
   let items = document.getElementsByClassName("gallery-item");
 
