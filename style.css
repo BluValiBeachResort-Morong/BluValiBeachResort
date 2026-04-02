@@ -208,6 +208,7 @@ nav a {
 
 .contact-box {
   margin-bottom: 40px;
+  margin: 8px 0;
 }
 
 .social-links {
@@ -298,3 +299,22 @@ nav a {
   background: #0b3d2e;
   color: white;
 }
+
+.contact-section h2 {
+  font-size: 32px;
+  color: #0b3d2e;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* underline design */
+.contact-section h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #4aaedb;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 5px;
+}
+
