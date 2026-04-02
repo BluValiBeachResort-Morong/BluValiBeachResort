@@ -345,8 +345,23 @@ nav a {
   display: none;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media (max-width: 768px) {
 
+  /* ❌ hide top navbar menu */
+  header nav {
+    display: none;
+  }
+
+  /* ❌ hide book button sa taas */
+  .btn {
+    display: none;
+  }
+
+  /* ✅ SHOW bottom nav */
   .mobile-nav {
     display: flex;
     position: fixed;
@@ -355,10 +370,10 @@ nav a {
     transform: translateX(-50%);
     
     background: white;
-    border-radius: 40px;
-    padding: 10px 20px;
+    border-radius: 50px;
+    padding: 12px 20px;
     
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     
     gap: 20px;
     z-index: 9999;
@@ -375,14 +390,9 @@ nav a {
     color: #4aaedb;
   }
 
-  /* para hindi matakpan content */
+  /* para di matakpan content */
   body {
     padding-bottom: 90px;
-  }
-
-  /* 🔥 OPTIONAL: hide top menu sa mobile */
-  nav {
-    display: none;
   }
 
 }
