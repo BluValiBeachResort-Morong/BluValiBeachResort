@@ -373,47 +373,42 @@ nav a {
 }
 
 /* 📱 MOBILE BOTTOM NAV */
-.mobile-nav {
-  display: none;
-}
-
 @media (max-width: 768px) {
 
+  .mobile-nav {
+    display: none !important;
+  }
+
   .top-bar .container {
-    flex-direction: column;   /* stack vertically */
-    gap: 5px;                 /* 🔥 maliit na spacing */
+    flex-direction: column;
+    gap: 5px;
     align-items: center;
   }
 
   .top-bar {
-    padding: 8px 5px;         /* bawas space */
+    padding: 8px 5px;
   }
 
   .top-bar span {
-    font-size: 13px;          /* optional: mas compact */
+    font-size: 13px;
   }
-
-}
 
   .overlay h1 {
     display: none;
   }
 
   .overlay p {
-  margin-top: 5px;
-}
+    margin-top: 5px;
+  }
 
-  /* ❌ hide menu links */
   header nav {
     display: none;
   }
 
-  /* ❌ FIX: hide BluVali title (tama selector) */
   .logo {
     display: none;
   }
 
-  /* ✅ center BOOK button */
   .nav {
     justify-content: center;
     align-items: center;
@@ -431,25 +426,20 @@ nav a {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   }
 
-  /* ✅ remove white gap */
   header {
     padding-bottom: 0;
   }
 
-  /* ✅ bottom nav */
   .mobile-nav {
     display: flex;
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    
     background: white;
     border-radius: 50px;
     padding: 12px 25px;
-    
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    
     gap: 25px;
     z-index: 9999;
   }
@@ -461,23 +451,8 @@ nav a {
     font-size: 13px;
   }
 
-  /* spacing para di matakpan */
   body {
     padding-bottom: 110px;
   }
+
 }
-
-
-/* 💻 DESKTOP: alisin din BluVali text */
-@media (min-width: 769px) {
-  .logo {
-    display: none;
-  }
-}
-
-/* smooth hide animation */
-header {
-  transition: transform 0.3s ease;
-}
-
-
