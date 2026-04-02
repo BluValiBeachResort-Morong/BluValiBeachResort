@@ -277,11 +277,24 @@ nav a {
   margin: auto;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  align-items: start; /* 🔥 important */
+.gallery-item {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* AESTHETIC (CROPPED) */
+.gallery-item.amenities,
+.gallery-item.rooms,
+.gallery-item.lounge {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* GUESTS (NO CROP) */
+.gallery-item.guest {
+  height: auto;
+  object-fit: contain;
 }
 
 .gallery-item:hover {
