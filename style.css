@@ -372,6 +372,7 @@ nav a {
   cursor: pointer;
 }
 
+/* ACTIVE NAV LINK */
 nav a.active,
 .mobile-nav a.active {
   color: white;
@@ -380,13 +381,19 @@ nav a.active,
   border-radius: 20px;
 }
 
-/* 📱 MOBILE BOTTOM NAV */
+/* =========================
+   MOBILE NAV (BASE)
+========================= */
+.mobile-nav {
+  display: none;
+}
+
+/* =========================
+   📱 MOBILE ONLY
+========================= */
 @media (max-width: 768px) {
 
-  .mobile-nav {
-    display: none !important;
-  }
-
+  /* TOP BAR */
   .top-bar .container {
     flex-direction: column;
     gap: 5px;
@@ -401,6 +408,7 @@ nav a.active,
     font-size: 13px;
   }
 
+  /* HERO */
   .overlay h1 {
     display: none;
   }
@@ -409,6 +417,7 @@ nav a.active,
     margin-top: 5px;
   }
 
+  /* HEADER */
   header nav {
     display: none;
   }
@@ -438,6 +447,7 @@ nav a.active,
     padding-bottom: 0;
   }
 
+  /* MOBILE NAV */
   .mobile-nav {
     display: flex;
     position: fixed;
@@ -459,10 +469,19 @@ nav a.active,
     font-size: 13px;
   }
 
+  /* spacing para di matakpan */
   body {
     padding-bottom: 110px;
   }
+}
 
+/* =========================
+   💻 DESKTOP ONLY
+========================= */
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none !important;
+  }
 }
 
 
