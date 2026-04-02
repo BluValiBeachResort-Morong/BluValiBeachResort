@@ -7,6 +7,7 @@
 
 html, body {
   height: 100%;
+  background: #eaf6fb;
 }
 
 html {
@@ -17,7 +18,9 @@ body {
   color: #0b3d2e;   /* dark navy */
   background: #eaf6fb; 
    display: flex;
-  flex-direction: column;/* dito ilagay light blue */
+  flex-direction: column;/
+  margin: 0;
+  overflow-x: hidden;
 }
 /* TOP BAR */
 .top-bar {
@@ -77,12 +80,14 @@ nav a {
 .hero {
   height: 100vh;
   position: relative;
+  background: #eaf6fb;
 }
 
 .hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .overlay {
