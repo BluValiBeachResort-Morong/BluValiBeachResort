@@ -130,9 +130,31 @@ nav a {
 /* FOOTER */
 .footer {
   background: #0b3d2e;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: white;
-  text-align: center;
-  padding: 20px;
+  font-size: 14px;
+}
+
+/* DEV TEXT */
+.footer .dev {
+  opacity: 0.8;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
 }
 
 /* FLOAT CHAT */
