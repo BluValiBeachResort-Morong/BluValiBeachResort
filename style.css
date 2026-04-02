@@ -10,9 +10,9 @@ html {
 }
 
 body {
-  color: #eaf6fb;
+color: #333; /* dark gray = readable */
+  background: #eaf6fb; /* dito mo ilagay light blue */
 }
-
 /* TOP BAR */
 .top-bar {
   background: #bfe8f7;
@@ -21,22 +21,16 @@ body {
 }
 
 header {
-  background: #bfe8f7;
-  width: 100%;
-}
-
-/* NAVBAR */
-header {
   position: sticky;
   top: 0;
-  background: white;
+  background: #bfe8f7;
+  width: 100%;
   z-index: 999;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
-  color: #4aaedb;
 }
 
 .nav {
@@ -157,7 +151,7 @@ nav a {
 }
 
 /* DEV TEXT */
-.footer.footer .dev {
+.footer .dev {
   margin-top: 5px;
   font-size: 14px;
   opacity: 0.8;
