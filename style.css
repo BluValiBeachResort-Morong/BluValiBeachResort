@@ -412,6 +412,9 @@ nav a.active,
 /* =========================
    🔥 DESKTOP NAV ACTIVE
 ========================= */
+/* =========================
+   🔥 DESKTOP NAV ACTIVE
+========================= */
 nav a.active {
   color: white;
   background: #0b3d2e;
@@ -431,6 +434,13 @@ nav a.active {
 ========================= */
 @media (max-width: 768px) {
 
+  /* ❌ HIDE TOP NAV + TOP BAR */
+  header,
+  .top-bar {
+    display: none;
+  }
+
+  /* ✅ SHOW BOTTOM NAV */
   .mobile-nav {
     position: fixed;
     bottom: 12px;
@@ -487,4 +497,15 @@ nav a.active {
     transform: scale(0.9);
   }
 
+}
+
+/* 🔥 SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🔥 FIX SCROLL OFFSET */
+section {
+  scroll-margin-top: 80px;
+}
 }
