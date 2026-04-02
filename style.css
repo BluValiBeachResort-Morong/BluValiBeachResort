@@ -379,6 +379,10 @@ nav a {
 
 @media (max-width: 768px) {
 
+  .overlay h1 {
+    display: none;
+  }
+
   /* ❌ hide menu links */
   header nav {
     display: none;
