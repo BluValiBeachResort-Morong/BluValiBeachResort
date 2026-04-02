@@ -281,10 +281,26 @@ nav a:hover {
 
 /* CARD */
 .rates-box {
-  background: white;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  border-left: 5px solid #0b3d2e;
+}
+
+.rates-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.rates-box h3 {
+  color: #0b3d2e;
+}
+
+.rates-section h2 {
+  text-align: center;
+  width: 100%;
 }
 
 /* REMOVE BULLETS */
