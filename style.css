@@ -10,8 +10,8 @@ html {
 }
 
 body {
-color: #333; /* dark gray = readable */
-  background: #eaf6fb; /* dito mo ilagay light blue */
+  color: #0b3d2e;   /* dark navy */
+  background: #eaf6fb; /* dito ilagay light blue */
 }
 /* TOP BAR */
 .top-bar {
@@ -114,6 +114,7 @@ nav a {
 
 .rates-box {
   background: white;
+  color: #0b3d2e;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -122,6 +123,15 @@ nav a {
 
 .rates-box ul {
   list-style: none;
+}
+
+.rates-box h3 {
+  color: #083024;
+}
+
+.rates-box p,
+.rates-box li {
+  color: #0b3d2e;
 }
 
 /* CONTACT */
