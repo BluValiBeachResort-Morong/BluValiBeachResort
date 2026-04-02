@@ -169,12 +169,14 @@ nav a {
 }
 
 .contact-section {
-  padding: 60px 20px; /* from 80 → 60 para umangat */
+  padding-bottom: 80px; /* from 80 → 60 para umangat */
 }
 
-.contact-box a {
+.contact-box .btn {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .social-links {
