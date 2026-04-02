@@ -520,13 +520,9 @@ nav a.active {
   .mobile-nav {
     display: none !important;
   }
-}
 
-/* ✅ FIXED (closed properly) */
-@media (max-width: 768px) {
+  /* 🔥 REMOVE TOP BAR SA DESKTOP */
   .top-bar {
     display: none;
-  }
-}
   }
 }
