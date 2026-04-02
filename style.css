@@ -42,7 +42,8 @@ header {
   position: sticky;
   transition: transform 0.3s ease;
   top: 0;
-  background: #bfe8f7;
+  background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(10px);
   width: 100%;
   z-index: 999;
 }
