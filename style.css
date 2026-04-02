@@ -404,11 +404,18 @@ nav a.active,
 }
 
 /* ACTIVE NAV LINK */
-nav a.active,
-.mobile-nav a.active {
+/* ACTIVE NAV LINK (DESKTOP ONLY STYLE) */
+nav a.active {
   color: white;
   background: #0b3d2e;
   padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* MOBILE NAV ACTIVE (SEPARATE para hindi masira layout) */
+.mobile-nav a.active {
+  color: white;
+  background: #0b3d2e;
   border-radius: 20px;
 }
 
@@ -515,8 +522,11 @@ nav a.active,
   }
 }
 
+/* ✅ FIXED (closed properly) */
 @media (max-width: 768px) {
   .top-bar {
     display: none;
+  }
+}
   }
 }
