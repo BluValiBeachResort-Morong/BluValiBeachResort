@@ -32,6 +32,10 @@ body {
   color: white;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 .top-bar .container {
   display: flex;
   justify-content: center;
