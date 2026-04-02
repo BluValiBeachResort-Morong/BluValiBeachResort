@@ -372,6 +372,14 @@ nav a {
   cursor: pointer;
 }
 
+nav a.active,
+.mobile-nav a.active {
+  color: white;
+  background: #0b3d2e;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
 /* 📱 MOBILE BOTTOM NAV */
 @media (max-width: 768px) {
 
@@ -457,10 +465,4 @@ nav a {
 
 }
 
-nav a.active,
-.mobile-nav a.active {
-  color: white;
-  background: #0b3d2e;
-  padding: 6px 12px;
-  border-radius: 20px;
-}
+
