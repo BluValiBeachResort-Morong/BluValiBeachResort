@@ -5,13 +5,19 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   color: #0b3d2e;   /* dark navy */
-  background: #eaf6fb; /* dito ilagay light blue */
+  background: #eaf6fb; 
+   display: flex;
+  flex-direction: column;/* dito ilagay light blue */
 }
 /* TOP BAR */
 .top-bar {
@@ -146,6 +152,7 @@ nav a {
   color: white;
   text-align: center;
   padding: 30px 10px;
+  margin-top: auto;
 }
 
 .footer-content {
@@ -178,13 +185,17 @@ nav a {
 
 
 .contact-section {
-  padding-bottom: 100px; /* from 80 → 60 para umangat */
+  padding-bottom: 120px; /* from 80 → 60 para umangat */
 }
 
 .contact-box .btn {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 40px;
   position: relative;
+}
+
+.contact-box {
+  margin-bottom: 40px;
 }
 
 .social-links {
