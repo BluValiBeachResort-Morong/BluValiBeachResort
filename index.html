@@ -240,6 +240,24 @@ function filterSelection(category) {
   btns.forEach(btn => btn.classList.remove("active"));
   event.target.classList.add("active");
 }
+
+  let lastScroll = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  let currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    // scroll down → hide
+    header.style.transform = "translateY(-100%)";
+  } else {
+    // scroll up → show
+    header.style.transform = "translateY(0)";
+  }
+
+  lastScroll = currentScroll;
+});
+  
 </script>
 
 <div class="mobile-nav">
