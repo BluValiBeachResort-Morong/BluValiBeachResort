@@ -273,8 +273,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 });
 
- const sections = document.querySelectorAll("section");
+ const sections = document.querySelectorAll("div[id]");
 const navLinks = document.querySelectorAll(".mobile-nav a, nav a");
+  const sectionTop = section.offsetTop - 150;
 
 window.addEventListener("scroll", () => {
   let current = "";
