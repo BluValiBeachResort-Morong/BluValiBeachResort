@@ -451,6 +451,19 @@ nav a {
   }
 }
 
+
+/* 💻 DESKTOP: alisin din BluVali text */
+@media (min-width: 769px) {
+  .logo {
+    display: none;
+  }
+}
+
+/* smooth hide animation */
+header {
+  transition: transform 0.3s ease;
+}
+
 .top-bar .container {
     flex-direction: column;   /* stack vertically */
     gap: 5px;                 /* 🔥 maliit na spacing */
@@ -465,16 +478,4 @@ nav a {
     font-size: 13px;          /* optional: mas compact */
   }
 
-}
-
-/* 💻 DESKTOP: alisin din BluVali text */
-@media (min-width: 769px) {
-  .logo {
-    display: none;
-  }
-}
-
-/* smooth hide animation */
-header {
-  transition: transform 0.3s ease;
 }
