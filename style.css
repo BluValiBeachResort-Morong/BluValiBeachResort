@@ -176,3 +176,26 @@ nav a {
   display: inline-block;
   margin-top: 25px;
 }
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0b3d2e;
+  font-weight: 500;
+  background: #f1f1f1;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #0b3d2e;
+  color: white;
+}
