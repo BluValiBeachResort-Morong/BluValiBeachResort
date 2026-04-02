@@ -130,21 +130,27 @@ nav a {
 /* FOOTER */
 .footer {
   background: #0b3d2e;
-  padding: 20px 0;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
 }
 
 .footer-content {
   max-width: 1200px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;   /* 🔥 important */
+  justify-content: center;
   align-items: center;
+  text-align: center;
   color: white;
   font-size: 14px;
 }
 
 /* DEV TEXT */
-.footer .dev {
+.footer.footer .dev {
+  margin-top: 5px;
+  font-size: 14px;
   opacity: 0.8;
 }
 
