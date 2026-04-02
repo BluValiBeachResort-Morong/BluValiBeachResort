@@ -336,63 +336,39 @@ nav a {
   border-radius: 5px;
 }
 
+/* 📱 MOBILE BOTTOM NAV */
+.mobile-nav {
+  display: none;
+}
+
 @media (max-width: 768px) {
 
-  /* TOP BAR */
-  .top-bar .container {
-    flex-direction: column;
-    gap: 5px;
-    font-size: 12px;
-  }
-
-  /* NAVBAR */
-  .nav {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-    padding: 15px;
-  }
-
-  /* LOGO TEXT */
-  .logo {
-    font-size: 22px;
-    line-height: 1.2;
-  }
-
-  /* MENU */
-  nav {
+  .mobile-nav {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0b6b6b; /* teal style like screenshot */
+    justify-content: space-around;
+    padding: 12px 0;
+    z-index: 9999;
   }
 
-  nav a {
-    display: block;
-    margin: 0;
-    font-size: 16px;
-  }
-
-  /* BUTTON */
-  .btn {
-    width: 80%;
-    max-width: 250px;
-    margin: auto;
-  }
-
-  /* HERO TEXT */
-  .overlay h1 {
-    font-size: 26px;
-    text-align: center;
-  }
-
-  .overlay p {
+  .mobile-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
     font-size: 14px;
   }
 
-  /* LOGO IMAGE */
-  .hero-logo {
-    width: 140px;
+  .mobile-nav a:hover {
+    opacity: 0.8;
   }
 
+  /* para di matakpan content */
+  body {
+    padding-bottom: 70px;
+  }
 }
 
