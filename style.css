@@ -347,34 +347,41 @@ nav a {
   display: none;
 }
 
-/* 📱 MOBILE ONLY */
 @media (max-width: 768px) {
 
-  /* ❌ hide top menu */
+  /* ❌ hide menu links */
   header nav {
     display: none;
   }
 
-  /* ❌ hide BOOK button lang */
-  header .btn {
+  /* ❌ hide BluVali title */
+  .nav h1 {
     display: none;
   }
 
-  /* ✅ CENTER TITLE (BluVali) */
+  /* ✅ center BOOK button */
   .nav {
-    position: relative;
     justify-content: center;
+    padding: 12px 0;
   }
 
-  .nav h1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    font-size: 22px;
+  header .btn {
+    display: block;
+    margin: auto;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    background: #0b3d2e;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   }
 
-  /* ✅ BOTTOM NAV */
+  /* ✅ remove white gap */
+  header {
+    padding-bottom: 0;
+  }
+
+  /* ✅ bottom nav */
   .mobile-nav {
     display: flex;
     position: fixed;
@@ -399,13 +406,14 @@ nav a {
     font-size: 13px;
   }
 
-  .mobile-nav a:hover {
-    color: #4aaedb;
-  }
-
   /* spacing para di matakpan */
   body {
     padding-bottom: 110px;
   }
 
+}
+
+/* smooth hide animation */
+header {
+  transition: transform 0.3s ease;
 }
