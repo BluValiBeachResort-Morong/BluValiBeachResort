@@ -167,3 +167,12 @@ nav a {
   padding: 15px;
   border-radius: 50%;
 }
+
+.contact-section {
+  padding: 60px 20px; /* from 80 → 60 para umangat */
+}
+
+.contact-box a {
+  display: inline-block;
+  margin-top: 25px;
+}
