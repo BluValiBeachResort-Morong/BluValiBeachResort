@@ -163,16 +163,6 @@ nav a {
   }
 }
 
-/* FLOAT CHAT */
-.messenger-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #0084ff;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-}
 
 .contact-section {
   padding-bottom: 80px; /* from 80 → 60 para umangat */
