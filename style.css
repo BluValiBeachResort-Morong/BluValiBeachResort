@@ -242,3 +242,36 @@ nav a {
   max-width: 1200px;
   margin: auto;
 }
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0 30px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 50px;
+  background: white;
+  color: #0b3d2e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* HOVER EFFECT */
+.filter-buttons button:hover {
+  background: #4aaedb;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ACTIVE BUTTON */
+.filter-buttons .active {
+  background: #0b3d2e;
+  color: white;
+}
