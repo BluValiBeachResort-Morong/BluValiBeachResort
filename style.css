@@ -10,15 +10,19 @@ html {
 }
 
 body {
-  color: #333;
+  color: #eaf6fb;
 }
 
 /* TOP BAR */
 .top-bar {
-  background: #0b3d2e;
-  color: white;
-  padding: 10px;
+  background: #bfe8f7;
+  color: #0b3d2e;
   text-align: center;
+}
+
+header {
+  background: #bfe8f7;
+  width: 100%;
 }
 
 /* NAVBAR */
@@ -38,13 +42,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+   padding: 20px 40px;
+   max-width: 1200px;
+  margin: auto;
+  width: 100%;
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #333;
+  color: #0b3d2e;
+  font-weight: bold;
 }
 
 .btn {
