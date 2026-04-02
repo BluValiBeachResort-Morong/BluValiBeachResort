@@ -70,6 +70,20 @@ nav a {
   font-weight: bold;
 }
 
+nav a,
+.mobile-nav a {
+  transition: all 0.3s ease;
+}
+
+/* 🔥 HOVER EFFECT */
+nav a:hover,
+.mobile-nav a:hover {
+  background: #0b3d2e;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
 .btn {
   background: #0b3d2e;
   color: white;
