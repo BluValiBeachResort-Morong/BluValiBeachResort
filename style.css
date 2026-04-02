@@ -101,17 +101,21 @@ nav a {
 }
 
 /* GALLERY */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 10px;
-  padding: 20px;
+.gallery-section h2 {
+  font-size: 32px;
+  color: #0b3d2e;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-.gallery img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+.gallery-section h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #4aaedb;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 5px;
 }
 
 /* RATES */
