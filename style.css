@@ -384,20 +384,21 @@ nav a {
     display: none;
   }
 
-  /* ❌ hide BluVali title */
-  .nav h1 {
+  /* ❌ FIX: hide BluVali title (tama selector) */
+  .logo {
     display: none;
   }
 
   /* ✅ center BOOK button */
   .nav {
     justify-content: center;
+    align-items: center;
     padding: 12px 0;
   }
 
   header .btn {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     padding: 12px 25px;
     border-radius: 50px;
     font-size: 14px;
@@ -440,7 +441,13 @@ nav a {
   body {
     padding-bottom: 110px;
   }
+}
 
+/* 💻 DESKTOP: alisin din BluVali text */
+@media (min-width: 769px) {
+  .logo {
+    display: none;
+  }
 }
 
 /* smooth hide animation */
