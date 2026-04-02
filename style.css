@@ -405,8 +405,10 @@ nav a.active,
 }
 
 /* ACTIVE NAV LINK */
-nav a.active,
-.mobile-nav a.active {
+/* =========================
+   🔥 DESKTOP NAV ACTIVE
+========================= */
+nav a.active {
   color: white;
   background: #0b3d2e;
   padding: 6px 12px;
@@ -414,75 +416,71 @@ nav a.active,
 }
 
 /* =========================
-   MOBILE NAV (BASE)
+   📱 MOBILE NAV (HIDDEN BY DEFAULT)
 ========================= */
 .mobile-nav {
   display: none;
 }
 
 /* =========================
-   📱 MOBILE ONLY
+   📱 MOBILE ONLY (iPhone Style)
 ========================= */
-/* 📱 iPhone Style Bottom Nav */
-.mobile-nav {
-  position: fixed;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  
-  width: 92%;
-  max-width: 500px;
+@media (max-width: 768px) {
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  padding: 10px 6px;
-   padding-bottom: calc(10px + env(safe-area-inset-bottom));
-
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-
-  border-radius: 25px;
-
-  box-shadow: 
-    0 8px 25px rgba(0,0,0,0.15),
-    inset 0 1px rgba(255,255,255,0.6);
-
-  z-index: 999;
-}
-
-/* 🔥 Nav Links */
-.mobile-nav a {
-  flex: 1;
-  text-align: center;
-  font-size: 13px;
-  color: #0b3d2e;
-  text-decoration: none;
-
-  padding: 8px 0;
-  border-radius: 15px;
-
-  transition: all 0.25s ease;
-}
-
-/* 🔥 Active (iOS style highlight) */
-.mobile-nav a.active {
-  background: #0b3d2e;
-  color: white;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* 🔥 Tap Effect */
-.mobile-nav a:active {
-  transform: scale(0.9);
-}
-
-/* 🚫 Desktop hidden */
-@media (min-width: 769px) {
   .mobile-nav {
-    display: none;
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 92%;
+    max-width: 500px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px 6px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
+
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 25px;
+
+    box-shadow: 
+      0 8px 25px rgba(0,0,0,0.15),
+      inset 0 1px rgba(255,255,255,0.6);
+
+    z-index: 999;
   }
+
+  /* 🔥 Nav Links */
+  .mobile-nav a {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    color: #0b3d2e;
+    text-decoration: none;
+
+    padding: 8px 0;
+    border-radius: 15px;
+
+    transition: all 0.25s ease;
+  }
+
+  /* 🔥 Active Tab */
+  .mobile-nav a.active {
+    background: #0b3d2e;
+    color: white;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  /* 🔥 Tap Animation */
+  .mobile-nav a:active {
+    transform: scale(0.9);
+  }
+
 }
