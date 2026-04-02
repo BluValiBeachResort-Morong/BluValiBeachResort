@@ -24,16 +24,16 @@
     <nav>
       <a href="#">Home</a>
       <a href="#gallery">Explore</a>
-      <a href="#rates">Rate & Inclusions</a>
-      <a href="#">Contact</a>
+      <a href="#rates">Rates</a>
+      <a href="#contact">Contact</a>
     </nav>
- <a href="https://www.facebook.com/messages/t/bluvalibeachmorong" target="_blank" class="btn">
-  BOOK YOUR STAY
-</a>
+    <a href="https://www.facebook.com/messages/t/bluvalibeachmorong" target="_blank" class="btn">
+      BOOK YOUR STAY
+    </a>
   </div>
 </header>
 
-<!-- HERO VIDEO -->
+<!-- HERO -->
 <section class="hero">
   <video autoplay muted loop playsinline class="hero-video">
     <source src="bluvalivideo.mp4" type="video/mp4">
@@ -215,8 +215,10 @@
   <img id="lightbox-img">
 </div>
 
+<a href="https://www.facebook.com/messages/t/bluvalibeachmorong" 
+   class="messenger-float" target="_blank">💬</a>
+
 <script>
-// FILTER
 function filterSelection(category) {
   let items = document.getElementsByClassName("gallery-item");
 
@@ -230,22 +232,6 @@ function filterSelection(category) {
   let btns = document.querySelectorAll(".filters button");
   btns.forEach(btn => btn.classList.remove("active"));
   event.target.classList.add("active");
-}
-
-// LIGHTBOX
-const images = document.querySelectorAll('.gallery img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-
-images.forEach(img => {
-  img.addEventListener('click', () => {
-    lightbox.style.display = "block";
-    lightboxImg.src = img.src;
-  });
-});
-
-function closeLightbox() {
-  lightbox.style.display = "none";
 }
 </script>
 
