@@ -451,6 +451,22 @@ nav a {
   }
 }
 
+.top-bar .container {
+    flex-direction: column;   /* stack vertically */
+    gap: 5px;                 /* 🔥 maliit na spacing */
+    align-items: center;
+  }
+
+  .top-bar {
+    padding: 8px 5px;         /* bawas space */
+  }
+
+  .top-bar span {
+    font-size: 13px;          /* optional: mas compact */
+  }
+
+}
+
 /* 💻 DESKTOP: alisin din BluVali text */
 @media (min-width: 769px) {
   .logo {
