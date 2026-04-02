@@ -379,6 +379,22 @@ nav a {
 
 @media (max-width: 768px) {
 
+  .top-bar .container {
+    flex-direction: column;   /* stack vertically */
+    gap: 5px;                 /* 🔥 maliit na spacing */
+    align-items: center;
+  }
+
+  .top-bar {
+    padding: 8px 5px;         /* bawas space */
+  }
+
+  .top-bar span {
+    font-size: 13px;          /* optional: mas compact */
+  }
+
+}
+
   .overlay h1 {
     display: none;
   }
@@ -464,18 +480,4 @@ header {
   transition: transform 0.3s ease;
 }
 
-.top-bar .container {
-    flex-direction: column;   /* stack vertically */
-    gap: 5px;                 /* 🔥 maliit na spacing */
-    align-items: center;
-  }
 
-  .top-bar {
-    padding: 8px 5px;         /* bawas space */
-  }
-
-  .top-bar span {
-    font-size: 13px;          /* optional: mas compact */
-  }
-
-}
