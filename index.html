@@ -232,7 +232,7 @@ function filterSelection(category) {
       : "none";
   }
 
-  let btns = document.querySelectorAll(".filters button");
+  let btns = document.querySelectorAll(".filter-buttons button");
   btns.forEach(btn => btn.classList.remove("active"));
   event.target.classList.add("active");
 }
