@@ -50,11 +50,10 @@
   <h2>BluVali Gallery</h2>
 
 <div class="filter-buttons">
+  <button class="active" onclick="filterSelection('guest')">Guest</button>
   <button onclick="filterSelection('amenities')">Amenities</button>
   <button onclick="filterSelection('lounge')">Lounge</button>
   <button onclick="filterSelection('rooms')">Rooms</button>
-  <button onclick="filterSelection('guest')">Guests</button>
-  <button class="active" onclick="filterSelection('all')">All</button>
 </div>
 
   <div class="gallery">
@@ -237,7 +236,7 @@ function filterSelection(category) {
   let items = document.getElementsByClassName("gallery-item");
 
   for (let i = 0; i < items.length; i++) {
-    if (category === "all" || items[i].classList.contains(category)) {
+    if (category === "guest" || items[i].classList.contains(category)) {
       items[i].style.display = "block";
     } else {
       items[i].style.display = "none";
