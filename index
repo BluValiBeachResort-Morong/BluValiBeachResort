@@ -62,35 +62,35 @@
     <img src="images/amenities/Amenities2.jpeg" class="gallery-item amenities">
     <img src="images/amenities/Amenities3.jpeg" class="gallery-item amenities">
     <img src="images/amenities/Amenities4.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities5.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities6.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities7.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities8.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities9.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities10.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities11.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities12.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities13.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities14.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities15.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities16.jpeg" class="gallery-item amenities">
-    <img src="images/amenities/Amenities17.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities5.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities6.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities7.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities8.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities9.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities10.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities11.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities12.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities13.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities14.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities15.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities16.jpg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities17.jpg" class="gallery-item amenities">
 
     <!-- LOUNGE -->
-    <img src="images/lounge/BluvaliLounge.jpeg" class="gallery-item lounge">
-    <img src="images/lounge/BluvaliLounge1.jpeg" class="gallery-item lounge">
-    <img src="images/lounge/BluvaliLounge2.jpeg" class="gallery-item lounge">
+    <img src="images/lounge/BluvaliLounge.jpg" class="gallery-item lounge">
+    <img src="images/lounge/BluvaliLounge1.jeg" class="gallery-item lounge">
+    <img src="images/lounge/BluvaliLounge2.jpg" class="gallery-item lounge">
     <img src="images/lounge/BluvaliLounge3.jpeg" class="gallery-item lounge">
     <img src="images/lounge/BluvaliLounge4.jpeg" class="gallery-item lounge">
 
     <!-- ROOMS -->
-    <img src="images/rooms/Room.jpeg" class="gallery-item rooms">
-    <img src="images/rooms/Room1.jpeg" class="gallery-item rooms">
-    <img src="images/rooms/Room2.jpeg" class="gallery-item rooms">
-    <img src="images/rooms/Room3.jpeg" class="gallery-item rooms">
-    <img src="images/rooms/Room4.jpeg" class="gallery-item rooms">
-    <img src="images/rooms/Room5.jpeg" class="gallery-item rooms">
-    <img src="images/rooms/Room6.jpeg" class="gallery-item rooms">
+    <img src="images/rooms/Room.jpg" class="gallery-item rooms">
+    <img src="images/rooms/Room1.jpg" class="gallery-item rooms">
+    <img src="images/rooms/Room2.jpg" class="gallery-item rooms">
+    <img src="images/rooms/Room3.jpg" class="gallery-item rooms">
+    <img src="images/rooms/Room4.jpg" class="gallery-item rooms">
+    <img src="images/rooms/Room5.jpg" class="gallery-item rooms">
+    <img src="images/rooms/Room6.jpg" class="gallery-item rooms">
     <img src="images/rooms/Room7.jpeg" class="gallery-item rooms">
     <img src="images/rooms/Room8.jpeg" class="gallery-item rooms">
 
