@@ -32,10 +32,6 @@ body {
   color: white;
 }
 
-section {
-  scroll-margin-top: 80px;
-}
-
 .top-bar .container {
   display: flex;
   justify-content: center;
@@ -409,13 +405,8 @@ nav a.active,
 }
 
 /* ACTIVE NAV LINK */
-/* =========================
-   🔥 DESKTOP NAV ACTIVE
-========================= */
-/* =========================
-   🔥 DESKTOP NAV ACTIVE
-========================= */
-nav a.active {
+nav a.active,
+.mobile-nav a.active {
   color: white;
   background: #0b3d2e;
   padding: 6px 12px;
@@ -423,89 +414,104 @@ nav a.active {
 }
 
 /* =========================
-   📱 MOBILE NAV (HIDDEN BY DEFAULT)
+   MOBILE NAV (BASE)
 ========================= */
 .mobile-nav {
   display: none;
 }
 
 /* =========================
-   📱 MOBILE ONLY (iPhone Style)
+   📱 MOBILE ONLY
 ========================= */
 @media (max-width: 768px) {
 
-  /* ❌ HIDE TOP NAV + TOP BAR */
-  header,
+  /* TOP BAR */
+  .top-bar .container {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
   .top-bar {
+    padding: 8px 5px;
+  }
+
+  .top-bar span {
+    font-size: 13px;
+  }
+
+  /* HERO */
+  .overlay h1 {
     display: none;
   }
 
-  /* ✅ SHOW BOTTOM NAV */
-  .mobile-nav {
-    position: fixed;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    width: 92%;
-    max-width: 500px;
+  .overlay p {
+    margin-top: 5px;
+  }
 
-    display: flex;
-    justify-content: space-around;
+  /* HEADER */
+  header nav {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav {
+    justify-content: center;
     align-items: center;
-
-    padding: 10px 6px;
-    padding-bottom: calc(10px + env(safe-area-inset-bottom));
-
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-
-    border-radius: 25px;
-
-    box-shadow: 
-      0 8px 25px rgba(0,0,0,0.15),
-      inset 0 1px rgba(255,255,255,0.6);
-
-    z-index: 999;
+    padding: 12px 0;
   }
 
-  /* 🔥 Nav Links */
-  .mobile-nav a {
-    flex: 1;
-    text-align: center;
-    font-size: 13px;
-    color: #0b3d2e;
-    text-decoration: none;
-
-    padding: 8px 0;
-    border-radius: 15px;
-
-    transition: all 0.25s ease;
-  }
-
-  /* 🔥 Active Tab */
-  .mobile-nav a.active {
+  header .btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 14px;
     background: #0b3d2e;
     color: white;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   }
 
-  /* 🔥 Tap Animation */
-  .mobile-nav a:active {
-    transform: scale(0.9);
+  header {
+    padding-bottom: 0;
   }
 
+  /* MOBILE NAV */
+  .mobile-nav {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 50px;
+    padding: 12px 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    gap: 25px;
+    z-index: 9999;
+  }
+
+  .mobile-nav a {
+    text-decoration: none;
+    color: #0b3d2e;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  /* spacing para di matakpan */
+  body {
+    padding-bottom: 110px;
+  }
 }
 
-/* 🔥 SMOOTH SCROLL */
-html {
-  scroll-behavior: smooth;
-}
-
-/* 🔥 FIX SCROLL OFFSET */
-section {
-  scroll-margin-top: 80px;
-}
+/* =========================
+   💻 DESKTOP ONLY
+========================= */
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none !important;
+  }
 }
