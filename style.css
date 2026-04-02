@@ -26,9 +26,9 @@ body {
 }
 /* TOP BAR */
 .top-bar {
-  background: #0b3d2e;
+  background: #bfe8f7; /* same as header mo */
   text-align: center;
-  color: white;
+  color: #0b3d2e;
 }
 
 .top-bar .container {
