@@ -438,6 +438,7 @@ nav a.active,
   align-items: center;
 
   padding: 10px 6px;
+   padding-bottom: calc(10px + env(safe-area-inset-bottom));
 
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(15px);
