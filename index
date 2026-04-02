@@ -8,36 +8,112 @@
 </head>
 <body>
 
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <div class="container">
-      <span>📍 Lot 422 Sitio Panibatuhan, Nagbalayong, Morong Bataan</span>
-      <span>📞 +63 915 713 5595</span>
-      <span>✉️ bluvalibeachandresort@gmail.com</span>
-    </div>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <span>📍 Lot 422 Sitio Panibatuhan, Nagbalayong, Morong Bataan</span>
+    <span>📞 +63 915 713 5595</span>
+    <span>✉️ bluvalibeachandresort@gmail.com</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header>
+  <div class="container nav">
+    <h2 class="logo">BluVali Beach Resort</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#gallery">Explore</a>
+      <a href="#gallery">Rooms</a>
+      <a href="#">Contact</a>
+    </nav>
+    <a href="#" class="btn">BOOK YOUR STAY</a>
+  </div>
+</header>
+
+<!-- HERO VIDEO -->
+<section class="hero">
+
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="images/bluvalivideo.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay">
+    <h1>BluVali Beach Resort</h1>
+    <p>Luxury Without Limits</p>
+    <a href="#" class="btn">BOOK YOUR STAY</a>
   </div>
 
-  <!-- NAVBAR -->
-  <header>
-    <div class="container nav">
-      <h2 class="logo">BluVali Beach Resort</h2>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Explore</a>
-        <a href="#">Rooms</a>
-        <a href="#">Contact</a>
-      </nav>
-      <a href="#" class="btn">BOOK YOUR STAY</a>
-    </div>
-  </header>
+</section>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="overlay">
-      <h1>BluVali Beach Resort</h1>
-      <p>Luxury Without Limits</p>
-    </div>
-  </section>
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <h2>Explore BluVali</h2>
+
+  <div class="filters">
+    <button onclick="filterSelection('all')" class="active">All</button>
+    <button onclick="filterSelection('amenities')">Amenities</button>
+    <button onclick="filterSelection('lounge')">Lounge</button>
+    <button onclick="filterSelection('rooms')">Rooms</button>
+  </div>
+
+  <div class="gallery">
+
+    <!-- AMENITIES -->
+    <img src="images/amenities/Amenities1.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities2.jpeg" class="gallery-item amenities">
+    <img src="images/amenities/Amenities3.jpeg" class="gallery-item amenities">
+
+    <!-- LOUNGE -->
+    <img src="images/lounge/BluvaliLounge1.jpeg" class="gallery-item lounge">
+    <img src="images/lounge/BluvaliLounge2.jpeg" class="gallery-item lounge">
+
+    <!-- ROOMS -->
+    <img src="images/rooms/Room1.jpeg" class="gallery-item rooms">
+    <img src="images/rooms/Room2.jpeg" class="gallery-item rooms">
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+<!-- SCRIPT -->
+<script>
+function filterSelection(category) {
+  let items = document.getElementsByClassName("gallery-item");
+
+  for (let i = 0; i < items.length; i++) {
+    items[i].style.display =
+      (category === "all" || items[i].classList.contains(category))
+      ? "block"
+      : "none";
+  }
+
+  let btns = document.querySelectorAll(".filters button");
+  btns.forEach(btn => btn.classList.remove("active"));
+  event.target.classList.add("active");
+}
+
+// LIGHTBOX
+const images = document.querySelectorAll('.gallery img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = "block";
+    lightboxImg.src = img.src;
+  });
+});
+
+function closeLightbox() {
+  lightbox.style.display = "none";
+}
+</script>
 
 </body>
 </html>
