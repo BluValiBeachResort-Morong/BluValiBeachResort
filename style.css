@@ -383,6 +383,10 @@ nav a {
     display: none;
   }
 
+  .overlay p {
+  margin-top: 5px;
+}
+
   /* ❌ hide menu links */
   header nav {
     display: none;
