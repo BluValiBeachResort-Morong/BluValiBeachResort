@@ -312,8 +312,9 @@ nav a.active,
 
 /* GUESTS (NO CROP) */
 .gallery-item.guest {
+  width: 100%;
   height: auto;
-  object-fit: contain;
+  aspect-ratio: auto;
 }
 
 .gallery-item:hover {
